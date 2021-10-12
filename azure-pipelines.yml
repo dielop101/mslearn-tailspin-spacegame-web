@@ -40,7 +40,6 @@ steps:
       projects: "**/*.csproj"
       feedsToUse: "select"
       vstsFeed: "$(System.TeamProject)/Tailspin.SpaceGame.Web.Models"
-      includeNuGetOrg: true
 
   - task: DotNetCoreCLI@2
     displayName: "Build the project - $(buildConfiguration)"
