@@ -36,8 +36,8 @@ steps:
   - task: NuGetCommand@2
     displayName: "Restore project dependencies"
     inputs:
-      command: custom
-      custom: "install"
+      command: restore
+      projects: "**/*.csproj"
       feedsToUse: "select"
       vstsFeed: "$(System.TeamProject)/Tailspin.SpaceGame.Web.Models"
 
