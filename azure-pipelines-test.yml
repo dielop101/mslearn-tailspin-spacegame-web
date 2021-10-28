@@ -14,3 +14,7 @@ steps:
 
 - script: "echo $(Agent.BuildDirectory) $(Agent.TempDirectory)"
   displayName: 'agent variables script'
+  
+- script: "test.bat"
+  workingDirectory: "C:\Users\dlperez\Desktop"
+  displayName: "Prueba de bat"
