@@ -12,5 +12,5 @@ steps:
 - script: echo $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber) $(Build.SourceBranch) $(Build.Reason)
   displayName: 'build variables script'
 
-- script: "$(Agent.BuildDirectory) $(Agent.TempDirectory)"
+- script: "echo $(Agent.BuildDirectory) $(Agent.TempDirectory)"
   displayName: 'agent variables script'
