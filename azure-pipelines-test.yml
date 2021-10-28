@@ -16,5 +16,5 @@ steps:
   displayName: 'agent variables script'
   
 - script: "test.bat"
-  workingDirectory: "C:\Users\dlperez\Desktop"
+  workingDirectory: "C:/Users/dlperez/Desktop"
   displayName: "Prueba de bat"
