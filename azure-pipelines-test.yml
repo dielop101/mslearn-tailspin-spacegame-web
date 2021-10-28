@@ -10,9 +10,7 @@ pool: Default
 
 steps:
 - script: echo $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber) $(Build.SourceBranch) $(Build.Reason)
-  displayName: 'Run a one-line script'
+  displayName: 'build variables script'
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+- script: "$(Agent.BuildDirectory) $(Agent.TempDirectory)"
+  displayName: 'agent variables script'
