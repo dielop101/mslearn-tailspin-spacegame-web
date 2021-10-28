@@ -9,7 +9,7 @@ trigger:
 pool: Default
 
 steps:
-- script: $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber) $(Build.SourceBranch) $(Build.Reason)
+- script: echo $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber) $(Build.SourceBranch) $(Build.Reason)
   displayName: 'build variables script'
 
 - script: "echo $(Agent.BuildDirectory) $(Agent.TempDirectory)"
