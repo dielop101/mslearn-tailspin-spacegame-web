@@ -1,0 +1,8 @@
+trigger:
+  - "*"
+
+pool: Default
+
+steps:
+- script: "echo test"
+  displayName: "Echo para pruebas"
