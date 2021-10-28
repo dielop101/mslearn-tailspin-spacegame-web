@@ -9,7 +9,7 @@ trigger:
 pool: Default
 
 steps:
-- script: echo $(Build.BuildId)
+- script: echo $(Build.DefinitionName)_$(Build.DefinitionVersion)_$(Build.BuildId)_$(Build.BuildNumber) $(Build.SourceBranch) $(Build.Reason)
   displayName: 'Run a one-line script'
 
 - script: |
